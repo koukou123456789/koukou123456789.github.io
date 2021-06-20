@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<title>welcome to new world!</title>
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html: charset=gbk" />
+		<style type="text/css">
+			body{
+				font-size: 12px;
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				display: block;
+				color: white;
+				width: 185px;
+				text-align: center;
+				text-decoration: none;
+			}
+			a:hover{
+				color: white;
+				background: #c00;
+			}
+			#nav{
+				line-height: 40px;
+				list-style-type: none;
+				background-color: #404040;
+				margin-left: 100px;
+			}
+			#nav li{
+				float: left;
+				width: 185px;
+				font-family: "微软雅黑","times new roman",georgia,serif;
+				font-size: 14px;
+				border-right: 1px solid gray;
+				background: #404040;
+			}
+			#nav li ul{
+				line-height: 35px;
+				position: absolute;
+				left: -1000px;
+				list-style-type: none;
+				text-align: center;
+				width: 185px;
+			}
+			#nav li ul li{
+				background: #ccc;
+				border: 0px solid white;
+				list-style-type: none;
+			}
+			#nav li ul a{
+				width: 185px;
+				text-align:center;
+				font-size: 12px;
+				color: #F6F6F6;
+			}
+			#nav li.mouseover ul{
+				left:auto;
+			}
+			#nav li.mouseout ul{
+				left: auto;
+				display: none;
+			}
+		</style>
+		<script type="text/javascript" language="JavaScript">
+			window.onload=function(){
+				var items=document.getElementById("nav").getElementsByTagName("li");
+				for(var i=0;i<items.length;i++){
+					items[i].onmouseover=function(){
+						this.className="mouseover";
+					}
+					items[i].onmouseover=function(){
+						this.className="mouseout";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="nav">
+			<li><a href="#">关于我们</a>
+				<ul>
+					<li><a href="#">公司简介</a></li>
+					<li><a href="#">企业文化</a></li>
+					<li><a href="#">合作伙伴</a></li>
+				</ul>
+				</li>
+				<li><a href="#">解决方案</a>
+				<ul>
+					<li><a href="#">证券期货</a></li>
+					<li><a href="#">基金理财</a></li>
+					<li><a href="#">财资管理</a></li>
+					<li><a href="#">其他</a></li>
+				</ul>
+				</li>
+				<li><a href="#">在线客服</a>
+				<ul>
+					<li><a href="#">证券客服</a></li>
+					<li><a href="#">精彩客服</a></li>
+					<li><a href="#">银行客服</a></li>
+					<li><a href="#">科技客服</a></li>
+				</ul>
+				</li>
+				<li><a href="#">诚聘英才</a>
+					<ul>
+						<li><a href="#">社会招聘</a></li>
+						<li><a href="#">校园招聘</a></li>
+						<li><a href="#">企业招聘</a></li>
+					</ul>
+				</li>
+				<li><a href="#">联系我们</a>
+					<ul>
+						<li><a href="#">联系方式</a></li>
+						<li><a href="#">中国区</a></li>
+						<li><a href="#">海外公司</a></li>
+					</ul>
+				</li>
+				</ul>
+	</body>
+</html>
